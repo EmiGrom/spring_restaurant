@@ -1,11 +1,20 @@
 package org.restaurant.models;
 
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class UserRequest {
 
     private String name;
     private String mealName;
 
-    public UserRequest() {
+}
+    /*public UserRequest() {
     }
 
     public UserRequest(String name, String mealName) {
@@ -28,4 +37,4 @@ public class UserRequest {
     public void setMealName(String mealName) {
         this.mealName = mealName;
     }
-}
+}*/

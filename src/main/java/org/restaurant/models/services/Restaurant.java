@@ -23,14 +23,35 @@ public class Restaurant {
 
      public int calculateOrderPrice(OrderR orderR){
         int sum = 0;
+        for (Meal meals: orderR.getMealList()) {
+            sum = sum + meals.getPrice();
+        }
         //todo implement
         return sum;
     }
 
+    /*OrderR
+    public List<Meal> getMealList() {
+        return mealList;
+    }*/
+
     public Meal getMeal(String mealName){
         //todo implement
+        for (Meal meals : menu) {
+            if (mealName.equals(meals.getName())) {
+                return meals;
+            }
+        }
         return null;
     }
+
+    /*for (Meal meal : menu) {
+            if (mealName.equals(meal.getName())){
+                return true;
+            }
+        }
+        return false;
+    }*/
 
     public List<Meal> getMenu() {
         return menu;

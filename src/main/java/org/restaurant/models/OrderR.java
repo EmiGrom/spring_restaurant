@@ -1,8 +1,13 @@
 package org.restaurant.models;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
+@AllArgsConstructor
 public class OrderR {
 
     private String orderOwner;
@@ -11,8 +16,9 @@ public class OrderR {
     public OrderR() {
         mealList = new ArrayList<>();
     }
+}
 
-    public OrderR(String orderOwner, List<Meal> mealList) {
+    /*public OrderR(String orderOwner, List<Meal> mealList) {
         this.orderOwner = orderOwner;
         this.mealList = mealList;
     }
@@ -33,5 +39,5 @@ public class OrderR {
         this.mealList = mealList;
     }
 
-}
+}*/
 

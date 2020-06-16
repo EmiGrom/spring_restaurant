@@ -1,11 +1,18 @@
 package org.restaurant.models;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Meal {
 
     private String name;
     private int price;
 
-    public Meal() {
+    /*public Meal() {
     }
 
     public Meal(String name, int price) {
@@ -27,7 +34,7 @@ public class Meal {
 
     public void setPrice(int price) {
         this.price = price;
-    }
+    } */
 
     @Override
     public String toString() {
